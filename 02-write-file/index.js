@@ -22,4 +22,8 @@ rl.on('line', (input) => {
     });
   }
 });
-  
+
+rl.on('SIGINT', () => {
+  console.log('Отличная работа!');
+  process.exit();
+});
